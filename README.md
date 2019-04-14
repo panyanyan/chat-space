@@ -1,4 +1,4 @@
-## memdersテーブル
+## membersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -26,23 +26,22 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false|
 |name|text|null: false|
 |image|string|
 
 ### Association
-- has_many :group, throgh: :members
+- has_many :groups, throgh: :members
 - has_many :massages
+  has_many :groups
 
 ## groupテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
-|group_name|integer|null: false, foreign_key: true|
-|coment|text|
-|image|string|
+|name|integer|null: false, foreign_key: true|
+
 
 ### Association
 - has_many :users, throgh: :members
 - has_many :messages
+  has_many :users
