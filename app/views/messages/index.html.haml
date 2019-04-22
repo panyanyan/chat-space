@@ -6,8 +6,52 @@
     %title
   %body
     
-.user__name shin
-.groups
-%p.group__name 水泳部
-.group ４年生
-.message 練習
+.chat__left
+  .user
+    %p.user-name 
+      shin
+    %ul.menu
+      %li.edit-user
+        =fa_icon"edit"
+      %li.group-new
+        =fa_icon"cog"
+  .groups
+    %p.group 
+      水泳部
+    %p.come 
+      eru
+.chat__right
+  .team
+    .teme-content
+      %p.team-name 
+        水泳部
+      %p.memmbers 
+        Memmbers
+    %a(href="/groups/497/edit")
+      .main-header__edit-btn
+        Edit
+  .messages
+    .message
+      .content
+        %p.memmber 
+          shin
+        %p.date
+          2019/04/20
+      .comment
+        おーい
+    .message
+      .content
+        %p.memmber 
+          shin
+        %p.date
+          2019/04/20
+      .comment
+        おーい
+  .form
+    %form.text
+      .input-box
+        %input.text_area(placeholder="type a message")
+          %label.image
+            = fa_icon "image"
+      %input.new-message__submit-btn(data-disable-with="Send" name="commit" type="submit" value="Send")/
+    

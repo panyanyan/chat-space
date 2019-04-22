@@ -1,0 +1,157 @@
+*{
+  box-sizing:border-box;
+}
+.menu{
+  display: flex;
+  .edit-user{
+    color:white;
+  }
+  .fa{
+    color: white;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.chat__left{
+  width: 300px;
+  height: 600px;
+  float: left;
+}
+.user{
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+  height: 100px;
+  background-color: #253141;
+  padding:0  20px;
+  display: flex;
+    .user-name{
+      color: white;
+      font-size: 16px;
+    }
+}
+.groups{
+  padding: 20px 20px 0;
+  background-color: #2f3e51;
+  width: 100%;
+  height: 1100px;
+}
+.group{
+  background-color: #2f3e51;
+  font-size :15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.chat__right{
+  width: calc(100vw - 300px);
+  float: left;
+}
+
+.team{
+  align-items:center;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #eee;
+    .team-name{
+      font-size: 20px;
+      color:#333333;
+      padding-top:35px;
+    }
+    .memmbers{
+      font-size: 12px;
+      color:#999999;
+      padding-top: 15px;
+    }
+}
+.come{
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.messages{
+  width: calc(100vw - 300px);
+  border-top: solid 1px #eeeeee;
+  background-color: #fafafa;
+  height: 1000px;
+  padding: 46px 40px 0;
+  }
+.message{
+  padding-bottom: 40px;
+}
+.content{
+  display: flex;
+  margin-bottom: 10px;
+}
+.memmber{
+  color:#434a54;
+  font-size: 16px;
+  font-weight: bold;
+}
+.date{
+  font-size: 12px;
+  color: #999999;
+  margin-left:10px; 
+}
+.comment{
+
+  font-size: 14px;
+  color: #434a54;
+  margin-bottom: 10px;
+  }
+.main-header__edit-btn {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border: solid 1px #38aef0;
+    color: #38aef0;
+  }
+.form{
+  padding: 0 40px 0;
+  background-color: gray;
+  display: flex;
+  height:100px;
+  align-items: center;
+  width: calc(100vw - 300px);
+  .input-box{
+    position: relative;
+    width: 100%;
+    .text_area{
+      height: 50px;
+      padding: 0 40px 0 10px;
+      width: 100%;
+      
+      }
+  }
+    .text{
+      width: calc(100vw - 300px);
+      display: flex;
+    }
+    .new-message__submit-btn{
+      width: 100px;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 15px;
+    background-color: #38aef0;
+    color: white;
+    cursor: pointer;
+    }
+  }
+  .image{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
