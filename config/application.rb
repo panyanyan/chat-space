@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module ChatSpace
   class Application < Rails::Application
+<<<<<<< HEAD
     config.generators do |g|
       g.stylesheets false
       g.javascripts false
@@ -15,5 +16,13 @@ module ChatSpace
       g.test_framework false
       
     end
+=======
+   confing.generators do |g|
+   	g.stylesheets false
+   	g.javascripts false
+   	g.helper false
+   	g.test_framework false
+   end
+>>>>>>> master
   end
 end
